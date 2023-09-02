@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800;900&family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #dfd9d9;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 50px;
+}
+
+.addDelete {
+    position: fixed;
+    margin: 30px auto;
+    justify-content: center;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    gap: 30px;
+    z-index: 40;
+}
+
+.add,
+.delete {
+    border: 1px solid rgb(146, 144, 144);
+    background-color: #e7e7e7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    padding: 15px 40px;
+    /* border: none; */
+    border-radius: 20px;
+
+}
+
+.instruction{
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    z-index: 30;
+    opacity: 0.5;
+
+}
+
+.note {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 350px;
+    box-shadow: 3px 5px 10px  rgb(184, 182, 182);
+}
+
+.tools {
+    width: 100%;
+    background-color: #2588d8;
+    /* background-color: rgb(219, 197, 174); */
+    /* background: linear-gradient(90deg, rgba(228,233,174,1) 5%, rgba(0,212,255,1) 90%); */
+    margin-left: auto;
+}
+
+.tools>* {
+
+    font-size: 17px;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin-left: auto;
+
+}
+
+.tools span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin: 5px;
+}
+
+.editNote {
+    margin-left: 52%;
+}
+
+.note textarea {
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.notes {
+    width: 100%;
+    display: flex;
+    margin: 12rem 3rem;
+    /* justify-content: flex-start; */
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+
+.main {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .date {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    opacity: 0.5;
+    
+} */
+
+
+
+
+
+
+
+
+@media (max-width:400px) {
+    .addDelete {
+        margin: auto;
+    }
+
+    .instruction {
+        display: flex;
+        justify-content: center;
+        margin-top: 110px;
+        z-index: 30;
+        transform: scale(0.6);
+    }
+
+}
